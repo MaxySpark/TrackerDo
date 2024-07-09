@@ -1,0 +1,36 @@
+.mat-toolbar.mat-primary {
+  background: #d7e3ff !important;
+}
+
+.content-wrapper {
+  margin: 2rem 4rem;
+}
+
+.stats-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  mat-card {
+    min-width: 300px;
+    color: #086d4b;
+
+  }
+}
+
+.stat-number {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.stat-header {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.stat-divider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
