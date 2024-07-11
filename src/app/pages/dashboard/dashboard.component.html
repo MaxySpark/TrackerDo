@@ -33,4 +33,15 @@
   </div>
   <mat-divider class="stat-divider"></mat-divider>
   <button mat-flat-button color="accent">Add Today's Log</button>
+  <mat-divider class="stat-divider"></mat-divider>
+  <div class="editor-calendar-block">
+    <div class="editor-block"><quill-editor [styles]="{height: '500px'}" (onFocus)="focus($event)"
+        (onNativeFocus)="nativeFocus($event)" (onEditorChanged)="changedEditor($event)" (onBlur)="blur($event)"
+        (onNativeBlur)="nativeBlur($event)" (onEditorCreated)="created($event)"></quill-editor></div>
+    <div class="calendar-block">
+      <full-calendar [options]="calendarOptions"></full-calendar>
+    </div>
+
+  </div>
+
 </div>
